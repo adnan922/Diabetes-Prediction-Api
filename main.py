@@ -51,7 +51,11 @@ def diabites_pred(input_parameters: model_input):
         return 'The Person is not Diabetic'
     else:
         return 'The Person in Diabetic'
-    
+
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=8000)
     
     
     
